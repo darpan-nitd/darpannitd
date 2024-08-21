@@ -24,6 +24,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={clsx(`${inter.className} min-h-screen bg-black`)}>
         {/* <Navbar /> */}
+        <div className="unsupported-notice">
+          This website is not yet available on devices with a width less than
+          1024 pixels.
+        </div>
         <main>{children}</main>
         <Footer />
       </body>

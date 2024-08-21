@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 1024px) {
+  body > *:not(.unsupported-notice) {
+    display: none;
+  }
+
+  .unsupported-notice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+    background-color: white;
+  }
+}
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
