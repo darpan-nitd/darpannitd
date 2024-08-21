@@ -23,7 +23,7 @@ const SocialHandles: React.FC = () => {
         icon={<FaLinkedin className="text-blue-600 text-6xl mb-2" />}
         platform="LinkedIn"
         followers={500}
-        url="https://linkedin.com"
+        url="https://in.linkedin.com/company/darpan-nit-durgapur-%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%AA%E0%A4%A3-%E0%A4%8F%E0%A4%A8-%E0%A4%86%E0%A4%88-%E0%A4%9F%E0%A5%80-%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A4%BE%E0%A4%AA%E0%A5%81%E0%A4%B0"
       />
       <SocialItem
         icon={<FaFacebook className="text-blue-800 text-6xl mb-2" />}
