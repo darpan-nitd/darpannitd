@@ -18,7 +18,7 @@ export async function getEventImages() {
   const client = await db.connect();
   try {
     const sqlQuery = `SELECT * FROM event_images 
-    WHERE is_active = true 
+    WHERE is_active = true AND event_id < '6'
     ORDER BY id ASC`;
     const images = await client.query(sqlQuery);
     return images.rows;
