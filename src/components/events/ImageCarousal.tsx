@@ -48,7 +48,7 @@ export default function ImageCarousel({ images }: ImageCarouselProps) {
     <div
       key={currentIndex}
       ref={carouselRef}
-      className="relative h-[600px] w-[600px] mx-auto overflow-hidden border-4 border-double rounded-2xl border-slate-200"
+      className="relative md:h-[600px] h-[400px] md:w-[600px] w-[400px] mx-auto overflow-hidden border-4 border-double rounded-2xl border-slate-200"
     >
       <motion.div
         className="relative w-full h-full object-cover"

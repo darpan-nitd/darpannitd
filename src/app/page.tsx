@@ -13,9 +13,17 @@ export default function HomePage() {
       <div className="min-h-screen bg-[url('/bg-home-1.svg')] bg-no-repeat bg-cover bg-top">
         <Navbar />
         <div className="pt-24 flex flex-col items-center">
-          <div className="w-full flex justify-between p-4">
-            <img src="/nit-dgp-logo.svg" alt="nit-dgp-logo" />
-            <img src="/darpan-logo.svg" alt="darpan-logo" />
+          <div className="w-full flex justify-between lg:p-4 p-2">
+            <img
+              className="lg:h-24 h-16"
+              src="/nit-dgp-logo.svg"
+              alt="nit-dgp-logo"
+            />
+            <img
+              className="lg:h-24 h-16"
+              src="/darpan-logo.svg"
+              alt="darpan-logo"
+            />
           </div>
           <div className="flex flex-col items-center">
             <p className={clsx(`${rozhaOne.className} text-white text-5xl`)}>
@@ -23,7 +31,7 @@ export default function HomePage() {
             </p>
             <img className="max-w-sm" src="/darpan-word.png" alt="" />
           </div>
-          <div className="w-[80%] bg-slate-200 bg-opacity-20 backdrop-blur-sm rounded-3xl pt-12">
+          <div className="w-[80%] bg-slate-200 bg-opacity-20 backdrop-blur-sm rounded-3xl pt-12 lg:block hidden">
             <CustomMediaCarousel />
           </div>
         </div>
@@ -31,11 +39,11 @@ export default function HomePage() {
       <div className="">
         <SocialHandles />
       </div>
-      <div className="flex bg-[url('/bg-home-2.svg')] bg-cover">
-        <div className="w-[40%] content-center backdrop-blur-sm m-8">
+      <div className="flex lg:flex-row flex-col bg-[url('/bg-home-2.svg')] bg-cover">
+        <div className="lg:w-[40%] content-center backdrop-blur-sm lg:m-8 m-4">
           <ContentCard />
         </div>
-        <div className="w-[60%] backdrop-blur-sm">
+        <div className="lg:w-[60%] backdrop-blur-sm">
           <ImageCollage />
         </div>
       </div>

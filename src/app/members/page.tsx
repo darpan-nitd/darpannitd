@@ -12,7 +12,7 @@ export default async function MembersPage() {
     <div className="bg-[url('/bg-members-1.svg')]">
       <Navbar />
       <div className="pt-28">
-        <div className="bg-zinc-900 m-8 p-4 rounded-full">
+        <div className="bg-zinc-900 m-8 lg:p-4 p-6 rounded-full">
           <p
             className={clsx(
               `${rozhaOne.className} text-center text-5xl text-gray-200 m-4`

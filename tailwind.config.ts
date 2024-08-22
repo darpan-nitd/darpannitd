@@ -16,7 +16,7 @@ const config: Config = {
       keyframes: {
         morph: {
           "0%": { borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% " },
-          "100%": { borderRadius: "32% 68% 46% 54% / 59% 75% 25% 41%  " },
+          "100%": { borderRadius: "40% 65% 65% 40% / 60% 70% 30% 40%  " },
         },
         spin: {
           to: { transform: " " },

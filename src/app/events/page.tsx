@@ -30,31 +30,35 @@ export default async function EventsPage() {
             <p className={clsx(`${kalam.className} text-6xl text-white p-8`)}>
               {EventIDtoName[eventId].hi}
             </p>
-            <div className="flex w-full mb-10">
+            <div className="lg:flex hidden w-full mb-10">
               {parseInt(eventId) % 2 === 1 ? (
-                <span className="w-1/2">
+                <span className="lg:w-1/2">
                   <ImageCarousel
                     images={images as EventImages[]}
                     key={eventId}
                   />
                 </span>
               ) : (
-                <span className="w-1/2">
+                <span className="lg:w-1/2">
                   <ContentCard eventId={eventId} key={eventId} />
                 </span>
               )}
               {parseInt(eventId) % 2 === 0 ? (
-                <span className="w-1/2">
+                <span className="lg:w-1/2">
                   <ImageCarousel
                     images={images as EventImages[]}
                     key={eventId}
                   />
                 </span>
               ) : (
-                <span className="w-1/2">
+                <span className="lg:w-1/2">
                   <ContentCard eventId={eventId} key={eventId} />
                 </span>
               )}
+            </div>
+            <div className="lg:hidden">
+              <ImageCarousel images={images as EventImages[]} key={eventId} />
+              <ContentCard eventId={eventId} key={eventId} />
             </div>
           </div>
           <span className="h-4 w-9/12 rounded-full bg-slate-500"></span>

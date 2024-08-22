@@ -20,7 +20,7 @@ export default function Cards(member: MemberInfo) {
   return (
     <div
       key={member.id}
-      className={`w-60 h-80 ${
+      className={`lg:w-60 lg:h-80 w-72 h-80 ${
         member.pass_year == 2025 ? "bg-red-950 text-white" : "bg-gray-300"
       } rounded-lg bg-opacity-40 backdrop-filter backdrop-blur-md shadow-[0_20px_50px_rgba(0,0,0,.9)] mb-6`}
     >
