@@ -75,7 +75,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              Drapan WebD Team
+              Darpan WebD Team
             </a>
             .
           </p>
