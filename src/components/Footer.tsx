@@ -60,7 +60,7 @@ export default function Footer() {
               <p className="text-lg flex items-center justify-center">
                 <PhoneCallIcon className="text-blue-500 text-2xl mr-2" />
                 <a href="tel:" className="text-blue-500">
-                  8709118506
+                  7007965966
                 </a>
               </p>
             </span>
@@ -75,7 +75,7 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              Raghav
+              Drapan WebD Team
             </a>
             .
           </p>
